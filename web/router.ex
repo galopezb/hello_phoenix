@@ -29,7 +29,7 @@ defmodule HelloPhoenix.Router do
   scope "/admin", HelloPhoenix.Admin, as: :admin do
     pipe_through :browser
 
-    resources "/reviews", HelloPhoenix.Admin.ReviewController
+    resources "/reviews", ReviewController
   end
 
   # Other scopes may use custom stacks.
